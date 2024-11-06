@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.portfolio-container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.navbar {
+    display: flex;
+    gap: 3.5rem;
+    height: 15vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: white;
+    position: relative;
+}
+
+.right-container,
+.left-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.left-container {
+    background: rgb(12, 22, 22);
+    width: 70%;
+    padding-left: 3.5rem;
+}
+
+.right-container {
+    background: linear-gradient(rgb(12, 22, 22) 30%, blue);
+    width: 30%;
+}
+
+.icons .fa-brands {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.content {
+    margin-left: 1.5rem;
+    color: white;
+}
+
+.content .intro {
+    font-size: 1.1em;
+}
+
+.content .intro span {
+    color: blue;
+    font-weight: bolder;
+    font-size: 1.6rem;
+}
+
+.content h1 {
+    font-size: 4rem;
+    color: blue;
+}
+
+.content button {
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    border: 1px solid blue;
+    border-radius: 10%;
+    transition: 0.2s ease;
+}
+
+.btn1 {
+    background: blue;
+}
+
+.btn1:hover {
+    cursor: pointer;
+    background: transparent;
+    color: blue;
+}
+
+.btn1:active {
+    background: transparent;
+}
+
+.btn2 {
+    margin-left: 30px;
+    background: transparent;
+    color: blue;
+}
+
+.btn2:hover {
+    cursor: pointer;
+    background: blue;
+    color: black;
+}
+
+.icons .fa-brands:hover {
+    cursor: pointer;
+    background: linear-gradient(white, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.design .circle {
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.circle:nth-child(1) {
+    background: linear-gradient(90deg, transparent 50%, rgb(12, 22, 22) 50%);
+    width: 30rem;
+}
+
+.circle:nth-child(2) {
+    background-image: url("Self\ image.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 25rem;
+    box-shadow:
+        0 0 1rem white,
+        inset 0 0 1rem white,
+        0 0 2rem blue,
+        inset 0 0 2rem blue,
+        0 0 4rem blue,
+        inset 0 0 4rem blue;
+    border: 3px solid white;
+}
+
+.navbar li a::after,
+.navbar .active::after {
+    content: "";
+    position: absolute;
+    background: white;
+    width: 100%;
+    height: 0.2rem;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform .5s;
+}
+
+.navbar li a:hover::after,
+.navbar .active::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.featured-container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    background: linear-gradient(135deg, blue, rgb(10, 208, 22)70%);
+}
+
+.featured-container img {
+    height: 12rem;
+    margin-top: 15rem;
+    margin-left: -10rem;
+}
+
+.featured-container h2 {
+    font-size: 2rem;
+    margin-left: 2rem;
+    margin-top: 8rem;
+    color: color-mix(in hsl longer hue, blue 40%, rgb(12, 22, 22) 60%)
+}
+
+.featured-container h2::after {
+    content: "";
+    position: absolute;
+    background: white;
+    width: 0.2rem;
+    height: 70%;
+    top: 7rem;
+    left: 20rem;
+}
+
+.featured-container h3 {
+    font-size: 2rem;
+    margin-left: 10rem;
+    margin-top: 8rem;
+    color: color-mix(in hsl longer hue, blue 40%, rgb(12, 22, 22) 60%)
+}
+
+.featured-container .work1 {
+    height: 8rem;
+    margin-top: 15rem;
+    margin-left: -10rem;
+}
+
+.featured-container .work2 {
+    height: 8rem;
+    margin-top: 15rem;
+    margin-left: 5rem;
+}
+
+.featured-container .work3 {
+    height: 8rem;
+    width: 14rem;
+    margin-top: 28rem;
+    margin-left: -33.5rem;
+}
+
+.featured-container .work4 {
+    height: 8rem;
+    margin-top: 28rem;
+    margin-left: -14.2rem;
+}
+
+.featured-container .work5 {
+    height: 8rem;
+    margin-top: 15rem;
+    margin-left: 5rem;
+}
+
+.hireme {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, blue, rgb(10, 208, 22) 70%);
+}
+
+.hireme h2 {
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    color: color-mix(in hsl longer hue, blue 40%, rgb(12, 22, 22) 60%)
+}
+
+.hireme p {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    color: beige;
+}
+
+.hireme ul {
+    display: flex;
+    gap: 3.5rem;
+    justify-content: center;
+    padding-top: 1.2rem;
+    padding-bottom: 1.5rem;
+}
+
+.hireme ul li {
+    list-style-type: none;
+    font-size: 1.8rem;
+    color: hsl(from purple 30 160 60)
+}
+
+.hireme a {
+    text-decoration: none;
+    color: hsl(from purple 30 160 60)
+}
+
+.hireme .dnresume {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.showskills {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    background: linear-gradient(135deg, blue, rgb(10, 208, 22)70%);
+}
+
+.card {
+    width: 6%;
+    height: 8rem;
+    margin-left: 6rem;
+    margin-top: 7rem;
+    border-radius: 12%;
+    box-shadow: .5em .7em 12px;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.card .skillusage {
+    font-size: 0.75rem;
+    color: white;
+}
+
+.exp-gallery{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    background: linear-gradient(135deg, blue, rgb(10, 208, 22)70%);
+}
+
+.experience{
+    font-size: 1.2rem;
+}
+
+.experience ul{
+    margin-left: 40px;
+    margin-top: 10rem; 
+}
+
+.certificate-gallery{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    background: linear-gradient(135deg, blue, rgb(10, 208, 22)70%);
+}
+
+.certificates {
+    display: flex;
+    gap: 7rem;
+    margin-top: 7rem;
+    margin-left: 2.5rem;
+}
+
+.certificates li {
+    list-style: disc;
+    width: 5rem;
+}
+
+.certificates li a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: white;
+    font-weight: bolder;
+}
+
+.certificates li a:hover{
+    background: linear-gradient(yellow, purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
